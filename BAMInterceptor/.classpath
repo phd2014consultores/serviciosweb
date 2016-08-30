@@ -2,14 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/com.google.gson_2.1.0.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/httpclient_4.2.5.wso2v1.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/libthrift_0.7.0.wso2v2.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/mule-core-3.5.0.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/mule-example-bookstore-1.0-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/org.wso2.carbon.databridge.agent.thrift_4.2.2.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/org.wso2.carbon.databridge.commons.thrift_4.2.0.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/org.wso2.carbon.databridge.commons_4.2.2.jar"/>
-	<classpathentry kind="lib" path="E:/Users/phd2014/workspace/librerias_BAM_MULE/org.wso2.carbon.logging_4.2.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MuleBAM"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
