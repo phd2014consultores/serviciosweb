@@ -14,17 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>librerias_BAM_MULE</name>
-			<type>2</type>
-			<location>C:/Users/phd2014/Documents/librerias_BAM_MULE</location>
-		</link>
-	</linkedResources>
-	<variableList>
-		<variable>
-			<name>LibBam</name>
-			<value>file:/C:/Users/phd2014/Documents/librerias_BAM_MULE</value>
-		</variable>
-	</variableList>
 </projectDescription>
