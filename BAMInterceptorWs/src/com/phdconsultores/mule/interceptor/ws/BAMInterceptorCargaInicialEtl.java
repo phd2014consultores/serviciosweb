@@ -16,8 +16,8 @@ import com.phdconsultores.mule.interceptor.param.ConexionParamBam;
 
 import java.util.Properties;
 
-public class BAMInterceptorLoginApp extends AbstractInterceptingMessageProcessor implements Interceptor{
-    private static Log log = LogFactory.getLog(BAMInterceptorLoginApp.class);
+public class BAMInterceptorCargaInicialEtl extends AbstractInterceptingMessageProcessor implements Interceptor{
+    private static Log log = LogFactory.getLog(BAMInterceptorCargaInicialEtl.class);
     private AsyncDataPublisher asyncDataPublisher;
     
     private ConexionParamBam cpb;
@@ -25,11 +25,11 @@ public class BAMInterceptorLoginApp extends AbstractInterceptingMessageProcessor
     
     
     //VARIABLES GLOBALES A ADAPTAR SEGUN EL SERVICIO PARA EL CUAL ESTA HECHA ESTA CLASE
-    private static final int ID_SERVICIO = 6;
-    private static final String SERVICIO = "LoginApp";
+    private static final int ID_SERVICIO = 3;
+    private static final String SERVICIO = "CargaInicialEtl";
     private static final int QUANTITY = 1;
 
-    public BAMInterceptorLoginApp() throws Exception {
+    public BAMInterceptorCargaInicialEtl() throws Exception {
     	cpb = new ConexionParamBam();
     	props = cpb.cargaPropiedadesBD();
         if (props != null) {

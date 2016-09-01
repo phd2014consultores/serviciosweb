@@ -16,8 +16,8 @@ import com.phdconsultores.mule.interceptor.param.ConexionParamBam;
 
 import java.util.Properties;
 
-public class BAMInterceptorLoginApp extends AbstractInterceptingMessageProcessor implements Interceptor{
-    private static Log log = LogFactory.getLog(BAMInterceptorLoginApp.class);
+public class BAMInterceptorRegTienda extends AbstractInterceptingMessageProcessor implements Interceptor{
+    private static Log log = LogFactory.getLog(BAMInterceptorRegTienda.class);
     private AsyncDataPublisher asyncDataPublisher;
     
     private ConexionParamBam cpb;
@@ -25,11 +25,11 @@ public class BAMInterceptorLoginApp extends AbstractInterceptingMessageProcessor
     
     
     //VARIABLES GLOBALES A ADAPTAR SEGUN EL SERVICIO PARA EL CUAL ESTA HECHA ESTA CLASE
-    private static final int ID_SERVICIO = 6;
-    private static final String SERVICIO = "LoginApp";
+    private static final int ID_SERVICIO = 10;
+    private static final String SERVICIO = "RegTienda";
     private static final int QUANTITY = 1;
 
-    public BAMInterceptorLoginApp() throws Exception {
+    public BAMInterceptorRegTienda() throws Exception {
     	cpb = new ConexionParamBam();
     	props = cpb.cargaPropiedadesBD();
         if (props != null) {
@@ -49,18 +49,6 @@ public class BAMInterceptorLoginApp extends AbstractInterceptingMessageProcessor
         + props.getProperty("bam.cassandra.host")
         + ":"
         + props.getProperty("bam.cassandra.puerto"), props.getProperty("bam.cassandra.usuario"), props.getProperty("bam.cassandra.usuario.pass"), agent);
-        
-        /*String streamDefinition = "{  "
-        		+ "'name':'invocacion_ws',  "
-        		+ "'version':'1.0.0',  "
-        		+ "'nickName': 'Invocacion WS',  "
-        		+ "'description': 'Registra la invocacion de los servicios web a traves del mule.',  "
-        		+ "'metaData':[          "
-        		+ "{'name':'publisherIP','type':'STRING'}  ],  "
-        		+ "'payloadData':[          "
-        		+ "{'name':'id','type':'INT'},         "
-        		+ "{'name':'servicio','type':'STRING'},         "
-        		+ "{'name':'quantity','type':'INT'}]}";*/
         
         String streamDefinition = "{  "
         		+ "'name':'" + props.getProperty("bam.cassandra.keyspace.name") + "',  "
