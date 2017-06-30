@@ -1,0 +1,9 @@
+ve\gob\mppee\gredsocial\correo\interfaz\Correo.class
+ve\gob\mppee\gredsocial\planificador\interfaz\Planificador.class
+ve\gob\mppee\gredsocial\model\Result.class
+ve\gob\mppee\gredsocial\planificador\impl\PlanificadorTimerImpl.class
+ve\gob\mppee\gredsocial\model\Tweet.class
+ve\gob\mppee\gredsocial\model\CorreoConfig.class
+ve\gob\mppee\gredsocial\ws\PublicarListaTweetsPlanificados.class
+ve\gob\mppee\gredsocial\negocio\CorreoJavaMailImpl.class
+ve\gob\mppee\gredsocial\negocio\TwitterTimerTask.class
